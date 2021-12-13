@@ -1,0 +1,23 @@
+
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/project?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+
+  thymeleaf:
+    cache: false
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  type-aliases-package: com.example.admindemo.entity
+
+logging:
+  level:
+    com.example.admindemo.mapper: trace

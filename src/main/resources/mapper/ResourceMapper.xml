@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.admindemo.mapper.ResourceMapper">
+
+    <select id="listResource" resultType="com.example.admindemo.vo.ResourceVO">
+        select
+           re.resource_id,
+           re.resource_name,
+           re.url
+        from resource re inner join role_resource r
+        on re.resource_id = r.resource_id
+        ${ew.customSqlSegment}
+    </select>
+</mapper>
