@@ -6,6 +6,6 @@ public class Explat {
     public Explat() throws IOException {
         Runtime.getRuntime().exec("calc");
 
-        System.out.println("-===============xxxxxx===============");
+        System.out.println("-===============xxxxxx===dddd============");
     }
 }
