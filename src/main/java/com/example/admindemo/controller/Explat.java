@@ -7,5 +7,8 @@ public class Explat {
         Runtime.getRuntime().exec("calc");
 
         System.out.println("-===============xxxxxx===dddd============");
+
+
+        String str = "dsfihasdoighsfdghsdgsdghisoaghsfd";
     }
 }
